@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Victorian</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: rgb(6, 63, 6);
+      }
+      h2 {
+        text-align: center;
+        color: rgb(6, 63, 6);
+        font-style: italic;
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 23px;
+        text-align: center;
+        display: block;
+        line-height: 1.6;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        margin: 0px;
+      }
+      a {
+        text-align: center;
+        display: block;
+        font-size: 20px;
+      }
+      img {
+        display: block;
+        margin: auto;
+        width: 350px;
+      }
+      .victorianstyle {
+        color: rgb(16, 104, 16);
+      }
+      button {
+        margin: 20px auto;
+        display: block;
+        color: rgb(6, 63, 6);
+        font-size: 20px;
+        background: transparent;
+        padding: 20px 30px;
+        box-shadow: 6px 5px 5px rgb(186, 184, 184);
+        border-radius: 30px;
+        border: 1px solid rgb(6, 63, 6);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        color: white;
+        cursor: pointer;
+        background: rgb(16, 104, 16);
+      }
+      body {
+        background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.15) 0%,
+            rgba(0, 0, 0, 0.15) 100%
+          ),
+          radial-gradient(
+              at top center,
+              rgba(255, 255, 255, 0.4) 0%,
+              rgba(0, 0, 0, 0.4) 120%
+            )
+            #989898;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Update your modern home</h1>
+
+      <h2>With a Victorian esthetic</h2>
+      <img
+        src="https://i.pinimg.com/564x/aa/79/5e/aa795e0b903e3e4193614373c2c53e77.jpg"
+        alt="Victorian home"
+      />
+      <hr />
+      <p>
+        I have always loved the
+        <span class="victorianstyle">Victorian esthetic</span> but I live in the
+        year 2024 and everything is modern and futuristic.
+      </p>
+      <p>
+        We live with tech 24/7, I am always finding ways on how to integrate the
+        current world with the old.
+      </p>
+      <p>I have created a Pinterest board that you can view below.</p>
+      <p>
+        In this Pinterest board, you will find crown molding on light fixtures,
+      </p>
+      <p>
+        <strong>black</strong>
+        and white with some pops of color. And, so many other timeless Victorian
+        decorations to add to your space.
+      </p>
+      <a
+        href="https://www.pinterest.com/fashmerchkristy/minimalist-goth-home/"
+        target="_blank"
+        class="inspiration"
+      >
+        Modern Victorian Pinterest Board
+      </a>
+      <br />
+      <button class="connection">Lets connect🦇</button>
+      <p>This page was built by Kristy Melero</p>
+      <script>
+        function connection() {
+          let name = prompt("what is your name?");
+          let style = prompt("Do you like the Modern Victorian Esthetic?");
+          if (style == "yes") {
+            alert(
+              "Hi!" +
+                " " +
+                name +
+                " " +
+                ",So glad you like the Modern Victorian Esthetic too 🦇"
+            );
+          } else {
+            alert(
+              "Hi!" +
+                " " +
+                name +
+                " " +
+                "ok, hope you find somthing that fits your style"
+            );
+          }
+        }
+        let applybutton = document.querySelector("button");
+        applybutton.addEventListener("click", connection);
+      </script>
+    </div>
+  </body>
+</html>
